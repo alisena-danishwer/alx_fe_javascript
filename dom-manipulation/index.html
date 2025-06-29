@@ -54,10 +54,24 @@
     <input id="newQuoteCategory" type="text" placeholder="Enter quote category" />
     <button id="addQuoteBtn">Add Quote</button>
   </div>
-  <!-- Inside <body> -->
-<div id="conflictNotification" style="color: red; font-weight: bold; display: none;">
-  ⚠️ A conflict was detected. Server data has replaced local data.
+<!-- Add inside body -->
+<div id="conflictNotification" style="color:red; font-weight:bold; display:none;">
+  ⚠ Server data replaced local data.
 </div>
+
+<div>
+  <select id="categoryFilter" onchange="filterQuote()">
+    <option value="all">All Categories</option>
+  </select>
+</div>
+
+<div id="quoteDisplay"></div>
+
+<input id="newQuoteText" type="text" placeholder="Enter quote">
+<input id="newQuoteCategory" type="text" placeholder="Enter category">
+<button id="addQuoteBtn">Add Quote</button>
+<button id="newQuote">Show New Quote</button>
+
 
 
   <script src="script.js"></script>
